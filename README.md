@@ -8,7 +8,7 @@ A tool that scores a candidate's resume against a job's requirements using AI �
 
 No install, no account setup beyond your own Claude login, nothing to configure. Open the link, confirm the job details, paste in a resume (or use the example one that's pre-filled), and click **Score this candidate**.
 
-> The link above is the only place this tool actually works. This GitHub repo holds the source code and a preview page — see [Why the code here doesn't fully run](#why-the-code-here-doesnt-fully-run) below.
+> The link above is the only place this tool actually works. This GitHub repo just holds the source code — see [Why the code here doesn't run on its own](#why-the-code-here-doesnt-run-on-its-own) below.
 
 ## What this is for
 
@@ -40,11 +40,9 @@ A few things to know before using this for anything real:
 - **The fairness checks measure *sensitivity*, not proof.** A flag means "this is worth a second look," not "this is confirmed bias." That's true even when a check passes — it's evidence the score held up under one kind of test, not a guarantee.
 - **The default job (AI Deployment Strategist) and its scoring weights are a starting example**, meant to be reviewed and adjusted for whatever role you're actually hiring for.
 
-## Why the code here doesn't fully run
+## Why the code here doesn't run on its own
 
-`index.html` in this repo is the exact same file published at the link above — this repo also serves it as a plain webpage via GitHub Pages, so you can preview the interface and read the code without opening Claude.
-
-But the actual scoring only works when the page is opened *inside Claude* — that's what lets it ask an AI to read a resume without you needing your own API key or server. Opened as a plain webpage (like the GitHub Pages copy), you can click through the setup screens and see how everything is laid out, but the **Score this candidate** button will be disabled, since there's no Claude connection to send the request to.
+`index.html` in this repo is the exact same file published at the link above. But the actual scoring only works when the page is opened *inside Claude* — that's what lets it ask an AI to read a resume without you needing your own API key or server. Opened any other way (downloaded and opened locally, hosted elsewhere), you'd see the setup screens and the interface, but the **Score this candidate** button would be disabled, since there'd be no Claude connection to send the request to.
 
 If you want to actually use the tool, use the [live link](https://claude.ai/code/artifact/1daf4be6-265e-48e3-8815-1c8ba1fd67df) at the top of this page.
 
