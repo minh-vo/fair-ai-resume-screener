@@ -2,6 +2,8 @@
 
 A tool that scores a candidate's resume against a job's requirements using AI — and then checks its own work, so you can see not just **"is this a strong candidate?"** but **"can I actually trust this score?"**
 
+Hiring teams are under real pressure to prove their AI tools aren't quietly discriminating, and most screening tools just hand you a number with no way to check it. This one is built the other way around: every evaluation ships with its own fairness audit, baked in rather than bolted on afterward — a plain-English fit summary, a score, and a clear signal on whether to trust it, in one pass. No install, no API key, no compliance review required just to try it out.
+
 ## Try it now
 
 👉 **[Open the live tool](https://claude.ai/code/artifact/1daf4be6-265e-48e3-8815-1c8ba1fd67df)**
